@@ -18,6 +18,7 @@ app.use(bodyParser.urlencoded({
 }))
 
 app.get('/', routes.index)
+app.get('/list', routes.list)
 
 app.listen(PORT, function () {
   console.log('Listening on port', PORT)
